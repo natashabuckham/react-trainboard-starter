@@ -1,0 +1,105 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "overrides": [
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prefer-arrow",
+        "simple-import-sort"
+    ],
+    "rules": {
+        "comma-dangle": [
+            "error",
+            "always-multiline"
+        ],
+        "curly": "error",
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxEOF": 1
+            }
+        ],
+        "no-console": "warn",
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "simple-import-sort/imports": [
+            "error",
+            {
+                "groups": [
+                    [
+                        "^react",
+                        "^@?\\w",
+                        "^(@|components)(/.*|$)",
+                        "^\\u0000",
+                        "^\\.\\.(?!/?$)",
+                        "^\\.\\./?$",
+                        "^\\./(?=.*/)(?!/?$)",
+                        "^\\.(?!/?$)",
+                        "^\\./?$"
+                    ]
+                ]
+            }
+        ],
+        "prefer-arrow/prefer-arrow-functions": [
+            "error",
+            {
+                "disallowPrototype": true,
+                "singleReturnOnly": false,
+                "classPropertiesAllowed": false
+            }
+        ],
+        "react/jsx-curly-spacing": ["error", "always"],
+        "react/jsx-equals-spacing": ["error", "always"],
+        "@typescript-eslint/member-delimiter-style": [
+            "error",
+            {
+                "multiline": {
+                    "delimiter": "semi",
+                    "requireLast": true
+                },
+                "singleline": {
+                    "delimiter": "semi",
+                    "requireLast": false
+                }
+            }
+        ]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}
