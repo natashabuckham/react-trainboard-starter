@@ -1,10 +1,26 @@
-# Getting Started with Create React App
+# Trainboard - Mobile App Starter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This Trainboard app is bootstrapped with [Create React App](https://github.com/facebook/create-react-app)  which serves to support the Softwire React Trainboard training exercise.
 
-In the project directory, you can run:
+## Developer Setup
+
+### Setup
+
+1. Install Node.js LTS (v18.12.0) via [NVM](https://github.com/coreybutler/nvm-windows).  
+2. Install WebStorm via [JetBrains Toolbox](https://www.jetbrains.com/toolbox-app/) (or another preferred editor).
+3. Install the project dependencies with `npm install`. 
+4. Set up your api key (See below)
+5. Run the code!
+    - Run in development mode with hot reloading with `npm start`
+
+
+## X-API-KEY Setup
+
+In order to have access to `mobile-api-softwire2.lner.co.uk`, set up the X-API-KEY:
+* Duplicate file `.env`, and rename the new file to `.env.local`
+* Replace `key` with the X-API-KEY, ask your trainer for this.
 
 ### `npm start`
 
