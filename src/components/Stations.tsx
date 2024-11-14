@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { fetchStations } from '../helpers/ApiCallHelper';
+import StationSelector from './StationSelector';
 
 const Stations: React.FC = () => {
 
@@ -17,6 +18,7 @@ const Stations: React.FC = () => {
     return (
         <div>
             Stations!
+            { <StationSelector/> }
         </div>
     );
 };

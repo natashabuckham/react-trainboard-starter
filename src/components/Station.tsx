@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 
 const Station: React.FC = () => {
     const { id } = useParams();
+
     return (
         <div>
             Station {id}!
